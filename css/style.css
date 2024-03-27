@@ -1,0 +1,126 @@
+/* roboto-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play sans-serif */
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+:root {
+    --color-brand-darkblue: #011C44;
+    --color-brand-blue: #2B7FFF;
+    --color-brand-white: #ffffff;
+    --color-grey: #4A4A4A;
+    --color-light-grey: #747272;
+    --color-yellow: #FFD02B;
+}
+
+body {
+    font-family: 'Roboto';
+    color: var(--color-brand-darkblue);
+}
+
+a {
+    color: var(--color-brand-darkblue);
+}
+
+a:hover {
+    color: var(--color-brand-blue);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    background-color: var(--color-brand-blue);
+    border-color: transparent;
+    border-radius: 32px;
+    padding: 16px 32px;
+    color: var(--color-brand-white)
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brand-darkblue);
+    border: 3px solid var(--color-brand-blue);
+    cursor: pointer;
+}
+
+
+/* HEADER */
+
+.header {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
