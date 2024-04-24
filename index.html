@@ -152,7 +152,7 @@
                         </li>
                     </ul>
 
-                    <button class="slider-button" type="button">
+                    <button class="slider-button rotate" type="button">
                         <svg width="16px" height="16px">
                             <use href="./image/icons.svg#arrow"></use>
                         </svg>
@@ -239,11 +239,35 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop ">
         <div class="modal">
             <button class="modal-btn-close" type="button">close</button>
-            <h2>Igor Manusha </h2>
-            <p>middle web-developer</p>
+
+            <h2 class="play-bold modal-title">Замовити дзвінок</h2>
+            <p class="modal-litell-title">Запишіться безкоштовно та отримайте подарунок</p>
+            <form name="order-call-form" autocomplete="on" validate>
+                <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                    <input class="form-input" type="text" id="user-name" placeholder="Ваше ім'я та прізвище">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                    <input class="form-input" type="tel" id="user-tel" placeholder="Телефон">
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-email">Ваш емейл</label>
+                    <input class="form-input" type="email" id="user-email" placeholder="Ваш емейл">
+                </div>
+
+                <div>
+                    <button class="button form-button" type="submit">Замовити дзвінок</button>
+                    <p class="privacy">Натискаючи на кнопку я погоджуюсь
+                        з політикою конфіденційності</p>
+                </div>
+            </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
