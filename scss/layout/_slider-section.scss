@@ -1,0 +1,41 @@
+.slider-section {
+    padding: 48px 0px 91px 0px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__container {
+        gap: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        gap: 16px;
+        flex-grow: 1;
+        display: flex;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 32px) / 3);
+    }
+
+    &__card {
+        color: var(--color-brand-white);
+        text-align: center;
+        height: 400px;
+        border-radius: 8px;
+        border: 1px solid var(--color-grey);
+        background-image: linear-gradient(180.05deg,
+                rgba(1, 28, 68, 0) 48.53%,
+                rgba(1, 28, 68, 0.725825) 84.61%,
+                #011C44 101.39%);
+        transition: transform 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

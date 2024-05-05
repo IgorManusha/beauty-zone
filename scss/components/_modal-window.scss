@@ -1,0 +1,42 @@
+.modal-window {
+    padding: 42px 144px;
+    text-align: center;
+    color: var(--color-brand-white);
+    position: relative;
+    max-width: 720px;
+    height: 98%;
+    max-height: 680px;
+    border-radius: 48px;
+    background-image: url(../image/footer-background.png);
+    background-color: var(--color-brand-darkblue);
+    overflow-x: hidden;
+
+    &__btn-close {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+
+        &--fill {
+            fill: var(--color-brand-white);
+        }
+    }
+
+    &__title {
+        max-width: 435px;
+        font-size: 64px;
+        line-height: 1.16;
+        margin-bottom: 40px;
+    }
+
+    &__litell-title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        max-width: 276px;
+    }
+}

@@ -1,0 +1,44 @@
+.header-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    max-height: fit-content;
+    background-color: #FFFFFF40;
+
+    &__container {
+        gap: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 56px;
+    }
+
+    &__icon-link {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__svg {
+        transition: fill 0.2s;
+
+        &:hover {
+            fill: var(--color-brand-blue);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import "./fonts/fonts";
+@import "./variables/variables";
+@import "./base/base";
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/link";
+@import "./components/visually-hidden";
+
+
+
+
+
+/* HEADER */
+
+
+
+@import "./layout/header-section";
+
+/* hero section */
+
+
+@import "./layout/hero-section";
+
+
+/* main section */
+
+@import "./layout/main-section";
+
+
+/* card section */
+
+@import "./layout/card-section";
+
+/* slider section */
+
+@import "./layout/slider-section";
+@import "./components/slider-buttons";
+
+/* contact section */
+
+@import "./layout/contact-section";
+
+/* footer */
+
+@import "./layout/footer-section";
+
+/* modal window */
+
+@import "./components/backdrop";
+@import "./components/modal-window";
+
+/* form */
+
+@import "./components/form";

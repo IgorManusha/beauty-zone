@@ -1,0 +1,66 @@
+/* BASE */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background-size: 100%;
+    background-position: 0px 1400px;
+    background-repeat: no-repeat;
+    background-image: url(../image/background-main.jpg);
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+address {
+    font-style: normal;
+}
+
+span {
+    color: var(--color-brand-blue);
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-brand-darkblue);
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+h1 {
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--color-brand-blue);
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+}
