@@ -1,21 +1,56 @@
 .card-section {
+    position: relative;
     padding: 88px 0px 48px 0px;
 
+    &__background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../image/background-main.jpg);
+
+    }
+
     &__container {
+        padding-bottom: 170px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width: $bp-mobile) {
+            padding-bottom: 0;
+        }
     }
 
     &__title {
+        margin-top: 230px;
         margin-bottom: 48px;
         text-align: center;
+
+        @media screen and (max-width: $bp-desktop) {
+            margin-top: 150px;
+
+            @media screen and (max-width: $bp-tablet) {
+                font-size: 38px;
+
+                @media screen and (max-width: $bp-mobile) {
+                    margin-top: 60px;
+                }
+            }
+        }
+
+
     }
 
     &__list {
         gap: 56px;
         display: flex;
+
+        @media screen and (max-width: $bp-desktop) {
+            flex-direction: column;
+            gap: 16px;
+        }
+
     }
+
 
     &__item {
         display: flex;
@@ -28,6 +63,11 @@
         text-align: center;
         border-radius: 32px;
         background-color: var(--color-brand-white);
+        box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+
+        @media screen and (max-width: $bp-tablet) {
+            box-shadow: 0px 4px 4px 5px rgba(168, 198, 245, 0.38);
+        }
     }
 
     &__p {

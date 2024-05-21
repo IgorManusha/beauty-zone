@@ -5,13 +5,20 @@ html {
     scroll-behavior: smooth;
 }
 
-main {
-    background-size: 100%;
-    background-position: 0px 1400px;
-    background-repeat: no-repeat;
-    background-image: url(../image/background-main.jpg);
-}
+// main {
+//     background-size: 100%;
+//     background-position: 0px 1400px;
+//     background-repeat: no-repeat;
+//     background-image: url(../image/background-main.jpg);
+// }
 
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 
 h1,

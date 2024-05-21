@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Zone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +16,8 @@
     <header class="header-section">
         <div class="container">
             <div class="header-section__container">
-                <a href="./index.html"><img src="./image/logo(1).svg" alt="логотип, назва 'beauty zone'"></a>
+                <a href="./index.html"><img class="header-section__logotype" src="./image/logo(1).svg"
+                        alt="логотип, назва 'beauty zone'"></a>
                 <nav class="header-section__nav">
                     <ul class="header-section__menu">
                         <li><a class="link" href="https://github.com/genius-space" target="_blank">Genius-home</a></li>
@@ -45,6 +47,15 @@
                         </svg>
                     </a>
                 </div>
+                <button type="button" class="header-section__burger-menu menu-btn-open">
+                    <svg class="header-section__burger-menu--litel" width="44px" height="44px">
+                        <use href="./image/icons.svg#burger-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__button-close menu-btn-close" type="button">Close</button>
+                    <h1 class="mobile-menu__my-class">Igor Manusha <br> very good <br> Frontend-developer</h1>
+                </div>
             </div>
         </div>
     </header>
@@ -54,8 +65,11 @@
             <div class="container">
                 <div class="hero-section__content">
                     <p class="hero-section__item">Косметологічна клініка</p>
-                    <h1 class="hero-section__logo play-bold">Beauty<br>Zone</h1>
-                    <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+                    <div class="hero-section__hero-title">
+                        <h1 class="hero-section__logo play-bold">Beauty Zone</h1>
+                    </div>
+                    <button class="button hero-section__button-margin modal-btn-open" type="button">Замовити
+                        дзвінок</button>
                     <p class="hero-section__mini-p">Запишись та отримай безкоштовну <br>
                         консультацію нашого косметолога</p>
                 </div>
@@ -95,9 +109,13 @@
                     </div>
 
                     <div class="main-section__image">
-                        <div class="main-section__image-first"><img src="./image/Mask-main.jpg" alt="обличчя жінки">
+                        <div class="main-section__image-first">
+                            <img srcset="./image/Mask-main.jpg 1x, ./image/Mask-main@2x.jpg 2x"
+                                src="./image/Mask-main.jpg" alt="обличчя жінки" />
                         </div>
-                        <div class="main-section__image-two"><img src="./image/Mask-main1.jpg" alt="обличчя жінки">
+                        <div class="main-section__image-two">
+                            <img srcset="./image/Mask-main1.jpg 1x, ./image/Mask-main1@2x.jpg 2x"
+                                src="./image/Mask-main1.jpg" alt="обличчя жінки" />
                         </div>
                     </div>
 
@@ -107,102 +125,233 @@
         </section>
 
         <section class="card-section" id="card-section">
-            <div class="container">
 
-                <div class="card-section__container">
-                    <h2 class="card-section__title play-bold">Чому люди <br> <span>обирають нас</span></h2>
-                    <ul class="card-section__list">
-                        <li class="card-section__item">
-                            <img src="./image/card-img-first.svg" alt="">
-                            <p class="card-section__p">Всі наші косметологи мають вищу медичну освіту
-                                та стаж роботи від 5 років</p>
-                        </li>
-                        <li class="card-section__item">
-                            <img src="./image/card-img-two.svg" alt="">
-                            <p class="card-section__p">Використовуємо тільки професійне обладнання та косметику,
-                                перевірену часом</p>
-                        </li>
-                        <li class="card-section__item">
-                            <img src="./image/card-img-three.svg" alt="">
-                            <p class="card-section__p">Наша мета - підкреслити переваги та приховати недоліки, а не
-                                переробити</p>
-                        </li>
-                    </ul>
+            <div class="card-section__background">
+                <div class="container">
+
+                    <div class="card-section__container">
+                        <h2 class="card-section__title play-bold">Чому люди <br> <span>обирають нас</span></h2>
+                        <ul class="card-section__list">
+                            <li class="card-section__item">
+                                <img src="./image/card-img-first.svg" alt="">
+                                <p class="card-section__p">Всі наші косметологи мають вищу медичну освіту
+                                    та стаж роботи від 5 років</p>
+                            </li>
+                            <li class="card-section__item">
+                                <img src="./image/card-img-two.svg" alt="">
+                                <p class="card-section__p">Використовуємо тільки професійне обладнання та косметику,
+                                    перевірену часом</p>
+                            </li>
+                            <li class="card-section__item">
+                                <img src="./image/card-img-three.svg" alt="">
+                                <p class="card-section__p">Наша мета - підкреслити переваги та приховати недоліки, а не
+                                    переробити</p>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
-
             </div>
+
         </section>
 
         <section class="slider-section" id="slider-section">
             <div class="container">
-                <h2 class="slider-section__title play-bold">Наші<span>процедури</span></h2>
+                <h2 class="slider-section__title play-bold">Наші <span>процедури</span></h2>
                 <div class="slider-section__container">
-                    <button type="button" class="slider-button">
-                        <svg width="16px" height="16px">
-                            <use href="./image/icons.svg#arrow"></use>
-                        </svg>
-                    </button>
 
-                    <ul class="slider-section__list">
-                        <li class="slider-section__item">
+                    <div class="slider-section__button">
+                        <button type="button" class="slider-button next">
+                            <svg width="16px" height="16px">
+                                <use href="./image/icons.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
 
-                            <article class="slider-section__card slider-section__card:hover">
-                                <img class="format-image" src="./image/Mask1-card.jpg" alt="Маски для обличча">
-                                <div class="text">
-                                    <h3>Маски <br>
-                                        для обличчя</h3>
+
+                    <div class="swiper-container slider-section__overflow">
+                        <ul class="swiper-wrapper slider-section__list">
+                            <li class="swiper-slide">
+
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/Mask1-card.jpg"
+                                            alt="Маски для обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Маски <br>
+                                                для обличчя</h3>
+                                        </div>
+                                    </article>
                                 </div>
-                            </article>
 
-                        </li>
-                        <li class="slider-section__item">
 
-                            <article class="slider-section__card slider-section__card:hover">
-                                <img class="format-image" src="./image/Mask2-card.jpg" alt="Ін'єкції обличча">
-                                <div class="text">
-                                    <h3>Ін'єкції <br>
-                                        для обличчя</h3>
+                            </li>
+                            <li class="swiper-slide">
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/Mask2-card.jpg"
+                                            alt="Ін'єкції обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Ін'єкції <br>
+                                                для обличчя</h3>
+                                        </div>
+                                    </article>
                                 </div>
-                            </article>
 
-                        </li>
-                        <li class="slider-section__item">
+                            </li>
 
-                            <article class="slider-section__card slider-section__card:hover">
-                                <img class="format-image" src="./image/Mask3-card.jpg" alt="Очищення обличча">
-                                <div class="text">
-                                    <h3>Очищення <br>
-                                        обличчя</h3>
+                            <li class="swiper-slide">
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/Mask3-card.jpg"
+                                            alt="Очищення обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Очищення <br>
+                                                обличчя</h3>
+                                        </div>
+                                    </article>
                                 </div>
-                            </article>
 
-                        </li>
-                    </ul>
 
-                    <button type="button" class="slider-button slider-button__rotate">
-                        <svg width="16px" height="16px">
-                            <use href="./image/icons.svg#arrow"></use>
-                        </svg>
-                    </button>
+                            </li>
+
+                            <li class="swiper-slide">
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/over-mother.jpg"
+                                            alt="Маски для обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Любов <br>
+                                                та Турбота</h3>
+                                        </div>
+                                    </article>
+                                </div>
+
+
+
+                            </li>
+
+                            <li class="swiper-slide">
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/over-mother-twoo.jpg"
+                                            alt="Маски для обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Приклад <br>
+                                                та Підтримка</h3>
+                                        </div>
+                                    </article>
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="swiper-slide">
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/igor-twoo.jpg"
+                                            alt="Очищення обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Сила <br>
+                                                Витримка </h3>
+                                        </div>
+                                    </article>
+                                </div>
+
+
+                            </li>
+
+                            <li class="swiper-slide">
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/yuliyaManusha.jpg"
+                                            alt="Маски для обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Неймовірна <br>
+                                                Потужна</h3>
+                                        </div>
+                                    </article>
+                                </div>
+
+                            </li>
+
+                            <li class="swiper-slide">
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/igor.jpg"
+                                            alt="Маски для обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Красунчик <br>
+                                                року 2024</h3>
+                                        </div>
+                                    </article>
+                                </div>
+
+
+
+                            </li>
+
+                            <li class="swiper-slide">
+
+                                <div class="slider-section__trans">
+                                    <article class="slider-section__card slider-section__card:hover">
+                                        <img class="slider-section__image" src="./image/juliya-sister.jpg"
+                                            alt="Маски для обличча">
+                                        <div class="slider-section__text">
+                                            <h3>Красуня <br>
+                                                року 2024</h3>
+                                        </div>
+                                    </article>
+                                </div>
+
+
+
+                            </li>
+
+                        </ul>
+                        <div class="pagination">
+                            <span class="pagination__button"></span>
+                        </div>
+                    </div>
+
+                    <div class="slider-section__button">
+                        <button type="button" class="slider-button__rotate slider-button prev">
+                            <svg width="16px" height="16px">
+                                <use href="./image/icons.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </section>
-
         <section class="contact-section" id="contact-section">
+
             <div class="container">
-                <h2 class="play-bold">Як нас <span>знайти</span></h2>
+                <h2 class="play-bold contact-section__title-main">Як нас <span>знайти</span></h2>
+
                 <div class="contact-section__container">
 
-                    <iframe class="contact-section__map"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d81254.41978423421!2d30.5643046!3d50.4746088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa04a0c8e5b%3A0x3b40a2bcbca08807!2z0JrQuNC10LLQvi3Qn9C10YfQtdGA0YHQutCw0Y8g0LvQsNCy0YDQsA!5e0!3m2!1sru!2sua!4v1711527485909!5m2!1sru!2sua"
-                        width="605" height="481" style="border: none; border-radius: 32px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-section__karta">
+                        <iframe class="contact-section__map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d81254.41978423421!2d30.5643046!3d50.4746088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa04a0c8e5b%3A0x3b40a2bcbca08807!2z0JrQuNC10LLQvi3Qn9C10YfQtdGA0YHQutCw0Y8g0LvQsNCy0YDQsA!5e0!3m2!1sru!2sua!4v1711527485909!5m2!1sru!2sua"
+                            style="border: none;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
 
                     <div class="contact-section__form">
                         <h3 class="contact-section__title">Запишіться <span>безкоштовно</span><br>
                             та отримайте подарунок</h3>
 
-                        <form name="contact-form" autocomplete="on">
+
+                        <!-- <form name="contact-section__form-item contact-form" autocomplete="on">
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="contact-user-name">Ваше ім'я та
                                     прізвище</label>
@@ -225,11 +374,14 @@
                                 class="button contact-section__button contact-section__button:hover">Записатись
                                 безкоштовно</button>
 
-                        </form>
+                        </form> -->
+
                         <p class="contact-section__form-privaci">Натискаючи на кнопку я погоджуюсь <br> з політикою
                             конфіденційності</p>
                     </div>
+
                 </div>
+
             </div>
         </section>
 
@@ -237,7 +389,8 @@
     <footer class="footer-section">
         <div class="container">
             <nav class="footer-section__nav">
-                <a href="./index.html"><img src="./image/logo(1).svg" alt="логотип, назва 'beauty zone'"></a>
+                <a class="footer-section__beauty-logo" href="./index.html"><img src="./image/logo(1).svg"
+                        alt="логотип, назва 'beauty zone'"></a>
                 <div>
                     <ul class="footer-section__menu">
                         <li><a class="link" href="#hero-section">Про нас</a></li>
@@ -286,7 +439,7 @@
                             <p class="footer-section__kon">Політика конфіденційності</p>
                         </li>
                         <li>
-                            <p class="copy-section__item">&copy; Дані захищені</p>
+                            <p class="footer-section__item">&copy;2024 Дані захищені</p>
                         </li>
                     </ul>
                 </div>
@@ -305,7 +458,8 @@
 
             <h2 class="modal-window__title play-bold">Замовити дзвінок</h2>
             <p class="modal-window__litell-title">Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
-            <form name="order-call-form" autocomplete="on">
+
+            <form name="form-order-coll" autocomplete="on">
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
                     <input class="form-input" type="text" id="user-name" placeholder="Ваше ім'я та прізвище">
@@ -322,14 +476,17 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="button form-button">Замовити дзвінок</button>
-                    <p class="privacy">Натискаючи на кнопку я погоджуюсь
+                    <button type="submit" class="button form-button modal-window__button">Замовити дзвінок</button>
+                    <p class="form__privacy">Натискаючи на кнопку я погоджуюсь
                         з політикою конфіденційності</p>
                 </div>
             </form>
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
