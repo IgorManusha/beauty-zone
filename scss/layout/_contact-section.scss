@@ -90,6 +90,12 @@
         font-size: 12px;
         line-height: 1.5;
         color: var(--color-light-grey);
+
+        @media screen and (max-width: $bp-desktop) {
+            font-size: 8px;
+        }
+
+
     }
 
     &__button {
