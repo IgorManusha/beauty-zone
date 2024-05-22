@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -47,15 +47,51 @@
                         </svg>
                     </a>
                 </div>
+
                 <button type="button" class="header-section__burger-menu menu-btn-open">
                     <svg class="header-section__burger-menu--litel" width="44px" height="44px">
                         <use href="./image/icons.svg#burger-menu"></use>
                     </svg>
                 </button>
+
+
+
                 <div class="mobile-menu">
                     <button class="mobile-menu__button-close menu-btn-close" type="button">Close</button>
-                    <h1 class="mobile-menu__my-class">Igor Manusha <br> very good <br> Frontend-developer</h1>
+
+                    <img class="mobile-menu__logo" src="./image/logo(1).svg" alt="">
+
+                    <div class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li><a class="link" href="#main-section">Про нас</a></li>
+                            <li><a class="link" href="#card-section">Чому ми</a></li>
+                            <li><a class="link" href="#slider-section">Наші процедури</a></li>
+                            <li><a class="link" href="#contact-section">Контакти</a></li>
+                        </ul>
+
+                        <div class="mobile-menu__soc">
+                            <a href="#">
+                                <svg class="mobile-menu__svg" width="32" height="32">
+                                    <use href="./image/icons.svg#phone"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="mobile-menu__svg" width="32" height="32">
+                                    <use href="./image/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="mobile-menu__svg" width="32" height="32">
+                                    <use href="./image/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
+
+
+
             </div>
         </div>
     </header>
@@ -111,11 +147,11 @@
                     <div class="main-section__image">
                         <div class="main-section__image-first">
                             <img srcset="./image/Mask-main.jpg 1x, ./image/Mask-main@2x.jpg 2x"
-                                src="./image/Mask-main.jpg" alt="обличчя жінки" />
+                                src="./image/Mask-main.jpg" alt="обличчя жінки">
                         </div>
                         <div class="main-section__image-two">
                             <img srcset="./image/Mask-main1.jpg 1x, ./image/Mask-main1@2x.jpg 2x"
-                                src="./image/Mask-main1.jpg" alt="обличчя жінки" />
+                                src="./image/Mask-main1.jpg" alt="обличчя жінки">
                         </div>
                     </div>
 
@@ -352,20 +388,22 @@
 
                         <form class="contact-form" autocomplete="off" novalidate>
                             <div>
-                                <!-- <label class="contact-form__label visually-hidden" for="us-name">Ваше ім'я та
-                                    прізвище</label> -->
+                                <label class="contact-form__label" for="us-name">Ваше ім'я та
+                                    прізвище</label>
                                 <input class="contact-form__input" type="text" id="us-name"
                                     placeholder="Ваше ім'я та прізвище">
 
                             </div>
                             <div>
-                                <!-- <label class="contact-form__label visually-hidden" for="">Ваш номер телефону</label> -->
-                                <input class="contact-form__input" type="text" placeholder="Ваш номер телефону">
+                                <label class="contact-form__label" for="use-tel">Ваш номер телефону</label>
+                                <input class="contact-form__input" type="text" id="use-tel"
+                                    placeholder="Ваш номер телефону">
 
                             </div>
                             <div>
-                                <!-- <label class="contact-form__label visually-hidden" for="">Ваша електронна пошта</label> -->
-                                <input class="contact-form__input" type="text" placeholder="Ваша електронна пошта">
+                                <label class="contact-form__label" for="use-email">Ваша електронна пошта</label>
+                                <input class="contact-form__input" type="text" id="use-email"
+                                    placeholder="Ваша електронна пошта">
 
                             </div>
                             <button class="button contact-form__button" type="submit">Записатись безкоштовно</button>
@@ -458,17 +496,17 @@
 
             <form name="form-order-coll" autocomplete="on">
                 <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                    <label class="form-label" for="user-name">Ваше ім'я та прізвище</label>
                     <input class="form-input" type="text" id="user-name" placeholder="Ваше ім'я та прізвище">
                 </div>
 
                 <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                    <label class="form-label" for="user-tel">Телефон</label>
                     <input class="form-input" type="tel" id="user-tel" placeholder="Телефон">
                 </div>
 
                 <div class="form-field">
-                    <label class="form-label visually-hidden" for="user-email">Ваш емейл</label>
+                    <label class="form-label" for="user-email">Ваш емейл</label>
                     <input class="form-input" type="email" id="user-email" placeholder="Ваш емейл">
                 </div>
 

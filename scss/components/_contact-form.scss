@@ -25,7 +25,9 @@
         color: palevioletred;
     }
 
-    &__label {}
+    &__label {
+        display: none;
+    }
 
     &__button {
         width: 100%;
